@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 #coding=utf-8
+"""
 from uitls import startend
 from selenium.webdriver.common.by import By
 from uitls.post_result import *
@@ -29,8 +30,7 @@ class TestRenling(startend.PostlendTest):
         self.getname = self.browser.get_text((By.XPATH,'//*[@id="app"]/div/div/div[2]/div[2]/div[2]/div/div[1]/div[1]/div/div[1]'))
         log.info("这是前段获取到的name:{0}".format(self.getname))
         self.assertNotEqual (self.po,self.getname)
-        是是是
-
+        """
         # self.customer_name = self.driver.get_text(self.browser, 'xpath', order_detail.customer_name)
     #     public_keyword.assert_result(self,self.customerName, self.customer_name,text_result=u'客户姓名与进件时客户姓名相同，正确；')
     #     # self.assertEqual(self.customerName, self.customer_name)
@@ -275,4 +275,3 @@ class TestRenling(startend.PostlendTest):
     #     self.qihuan_qs_money = dict_01[u'第1期-本期合计应收款额']
     #     public_keyword.assert_result(self,public_keyword.number_money(self.qihuan_ss_money),public_keyword.number_money(self.qihuan_qs_money),text_result=u'易捷表，第一期期还金额正确；')
     #     # self.assertEqual(public_keyword.number_money(self.qihuan_ss_money),public_keyword.number_money(self.qihuan_qs_money))
-

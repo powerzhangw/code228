@@ -25,7 +25,7 @@ class PostlendTest(unittest.TestCase):
             self.browser.input((By.ID,"txtPhoneCertify"),'EJIE')
             self.browser.click((By.XPATH,'//*[text()=\"登录\"]'))
             log.info("登录成功，开始测试")
-            self.browser.implicitly_wait(30)
+            self.browser.implicitly_wait(10)
 
         def tearDown(self):
             time.sleep(2)

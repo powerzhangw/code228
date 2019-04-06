@@ -1,8 +1,7 @@
 # coding:utf-8
 import unittest
 import os,time
-from uitls.HTMLTestRunner_cn import HTMLTestRunner
-
+from uitls.HTMLTestRunner import HTMLTestRunner
 # 用例路径
 case_path = os.path.join(os.getcwd(), "test_case")
 # case_path = os.path.join(os.getcwd(), "demo")

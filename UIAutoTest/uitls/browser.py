@@ -211,6 +211,23 @@ class browser(object):
         else:
             log.error('元素不可见，无法输入' + str(located))
 
+    def inputs(self, located, value):
+        """
+        输入框输入值
+        :param located: （By.ID,'id'） By等位元素
+        :param value:    'selenium' 输入值
+        :return:
+        :Usage:
+        located=(By.id,'id_name')
+        browser.input(located,'自动化测试')
+        """
+        time.sleep(1)
+        if self.find_elements(located).is_displayed():
+            self.find_elements(located).send_keys(str(value))
+            log.info(str(located) + '输入' + str(value) + '成功')
+        else:
+            log.error('元素不可见，无法输入' + str(located))
+
     def click(self, located):
         """
         单击
@@ -248,6 +265,7 @@ class browser(object):
         鼠标移动到元素上
         :param located: (By,id,'id')
         """
+        time.sleep(1)
         element = self.find_element(located)
         ActionChains(self.driver).move_to_element(element).perform()
         log.info('鼠标移动到元素上' + str(located))
