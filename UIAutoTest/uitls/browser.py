@@ -245,9 +245,18 @@ class browser(object):
     def kenter (self,located):
         if self.find_element(located).is_displayed():
             self.find_element(located).send_keys(Keys.ENTER)
-            log.info(str(located) + '单击成功')
+            log.info(str(located) + 'enter成功')
         else:
             log.error('元素不可见，无法单击' + str(located))
+
+    # sendKeys(Keys.TAB)
+    def Ktab (self,located):
+        if self.find_element(located).is_displayed():
+            self.find_element(located).send_keys(Keys.TAB)
+            log.info(str(located) + 'tab单击成功')
+        else:
+            log.error('元素不可见，无法单击' + str(located))
+
 
 
     def right_click(self, located):

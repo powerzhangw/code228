@@ -9,11 +9,10 @@
 <style type="text/css" media="screen">
 body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
 table       { font-size: 100%; }
-pre  {
+pre  { 
     white-space: pre-wrap;
     word-wrap: break-word;
 }
-
 /* -- heading ---------------------------------------------------------------------- */
 h1 {
 	font-size: 16pt;
@@ -23,21 +22,17 @@ h1 {
     margin-top: 0ex;
     margin-bottom: 1ex;
 }
-
 .heading .attribute {
     margin-top: 1ex;
     margin-bottom: 0;
 }
-
 .heading .description {
     margin-top: 4ex;
     margin-bottom: 6ex;
 }
-
 /* -- css div popup ------------------------------------------------------------------------ */
 a.popup_link {
 }
-
 a.popup_link:hover {
     color: red;
 }
@@ -46,7 +41,6 @@ a.popup_link:hover {
 	border-collapse: collapse;
     border: 2px solid #777;
 }
-
 .screenshots {
     z-index: 100;
 	position:absolute;
@@ -56,7 +50,6 @@ a.popup_link:hover {
     transform: translate(-50%,-50%);
 	display: none;
 }
-
 .imgyuan{
     height: 20px;
     border-radius: 12px;
@@ -69,7 +62,7 @@ a.popup_link:hover {
 }
 .imgyuan font{
     border:1px solid white;
-    width:11px;
+    width:11px; 
     height:11px;
     border-radius:50%;
     margin-right: 9px;
@@ -101,14 +94,12 @@ a.popup_link:hover {
     text-align: left;
     font-size: 8pt;
 }
-
 }
 /* -- report ------------------------------------------------------------------------ */
 #show_detail_line {
     margin-top: 3ex;
     margin-bottom: 1ex;
 }
-
 #result_table {
     margin: 1em 0;
     width: 100%;
@@ -151,7 +142,6 @@ a.popup_link:hover {
         border: 1px solid #D9E4E6;
       }
     }
-
 #result_table  th, td {
       margin: .5em 1em;
       @media (min-width: 400px) {
@@ -159,7 +149,6 @@ a.popup_link:hover {
         padding: 1em;
       }
     }
-
 #total_row  { font-weight: bold; }
 .passClass  { background-color: #6c6;  !important ;}
 .failClass  { background-color: #c60;  !important ;}
@@ -172,29 +161,23 @@ tr[id^=ft]  td { background-color: rgba(252,161,48,.3) !important; }
 tr[id^=et]  td { background-color: rgba(249,62,62,.3) !important ; }
 .hiddenRow  { display: none; }
 .testcase   { margin-left: 2em; }
-
 /* -- ending ---------------------------------------------------------------------- */
 #ending {
 }
-
-
-.piechart{
+.piechart{  
     position:absolute;  ;
-    top:20px;
-    left:300px;
+    top:20px;  
+    left:300px; 
     width: 200px;
     float: left;
     display:  inline;
 }
-
-
 </style>
 
 </head>
 <body>
 <script language="javascript" type="text/javascript">
 output_list = Array();
-
 /* level - 0:Summary; 1:Failed; 2:All */
 function showCase(level) {
     trs = document.getElementsByTagName("tr");
@@ -219,8 +202,6 @@ function showCase(level) {
         }
     }
 }
-
-
 function showClassDetail(cid, count) {
     var id_list = Array(count);
     var toHide = 1;
@@ -247,8 +228,6 @@ function showClassDetail(cid, count) {
         }
     }
 }
-
-
 function showTestDetail(div_id){
     var details_div = document.getElementById(div_id)
     var displayState = details_div.style.display
@@ -261,45 +240,38 @@ function showTestDetail(div_id){
         details_div.style.display = 'none'
     }
 }
-
-
 function html_escape(s) {
     s = s.replace(/&/g,'&amp;');
     s = s.replace(/</g,'&lt;');
     s = s.replace(/>/g,'&gt;');
     return s;
 }
-
-function drawCircle(pass, fail, error){
-    var color = ["#6c6","#c60","#c00"];
-    var data = [pass,fail,error];
+function drawCircle(pass, fail, error){ 
+    var color = ["#6c6","#c60","#c00"];  
+    var data = [pass,fail,error]; 
     var text_arr = ["pass", "fail", "error"];
-
-    var canvas = document.getElementById("circle");
-    var ctx = canvas.getContext("2d");
+    var canvas = document.getElementById("circle");  
+    var ctx = canvas.getContext("2d");  
     var startPoint=0;
     var width = 20, height = 10;
     var posX = 112 * 2 + 20, posY = 30;
     var textX = posX + width + 5, textY = posY + 10;
-    for(var i=0;i<data.length;i++){
-        ctx.fillStyle = color[i];
-        ctx.beginPath();
-        ctx.moveTo(112,84);
-        ctx.arc(112,84,84,startPoint,startPoint+Math.PI*2*(data[i]/(data[0]+data[1]+data[2])),false);
-        ctx.fill();
-        startPoint += Math.PI*2*(data[i]/(data[0]+data[1]+data[2]));
-        ctx.fillStyle = color[i];
-        ctx.fillRect(posX, posY + 20 * i, width, height);
-        ctx.moveTo(posX, posY + 20 * i);
+    for(var i=0;i<data.length;i++){  
+        ctx.fillStyle = color[i];  
+        ctx.beginPath();  
+        ctx.moveTo(112,84);   
+        ctx.arc(112,84,84,startPoint,startPoint+Math.PI*2*(data[i]/(data[0]+data[1]+data[2])),false);  
+        ctx.fill();  
+        startPoint += Math.PI*2*(data[i]/(data[0]+data[1]+data[2]));  
+        ctx.fillStyle = color[i];  
+        ctx.fillRect(posX, posY + 20 * i, width, height);  
+        ctx.moveTo(posX, posY + 20 * i);  
         ctx.font = 'bold 14px';
         ctx.fillStyle = color[i];
-        var percent = text_arr[i] + ":"+data[i];
-        ctx.fillText(percent, textX, textY + 20 * i);
-
+        var percent = text_arr[i] + ":"+data[i];  
+        ctx.fillText(percent, textX, textY + 20 * i);  
     }
 }
-
-
 function show_img(obj) {
     var obj1 = obj.nextElementSibling
     obj1.style.display='block'
@@ -312,7 +284,7 @@ function show_img(obj) {
     }
     obj1.onmouseout=function(){//当鼠标光标停在图片上，则开始轮播
         start=setInterval(autoPlay,1000);
-    }
+    }    
     for (var i = 0; i < len; i++) {
         var font = document.createElement('font')
         imgyuan.appendChild(font)
@@ -328,7 +300,7 @@ function show_img(obj) {
     for (var i = 0; i < lis.length; i++) {
         funny(i);
     }
-
+    
     function autoPlay(){
         if(index>len-1){
             index=0;
@@ -348,7 +320,6 @@ function show_img(obj) {
         list[index].style.display = 'block';
         list1[index].style.backgroundColor = 'blue';
     }
-
 }
 function hide_img(obj){
     obj.parentElement.style.display = "none";
@@ -362,13 +333,12 @@ function hide_img(obj){
 </div>
 <div class='heading'>
 <h1>自动化测试报告,测试结果如下：</h1>
-<p class='attribute'><strong>开始时间:</strong> 2019-04-06 11:40:45</p>
-<p class='attribute'><strong>耗时:</strong> 0:00:48.674171</p>
+<p class='attribute'><strong>开始时间:</strong> 2019-04-08 11:39:35</p>
+<p class='attribute'><strong>耗时:</strong> 0:00:30.231000</p>
 <p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>1</p>
 
 <p class='description'>用例执行情况：</p>
 </div>
-
 
 
 <p id='show_detail_line'>显示
@@ -376,7 +346,6 @@ function hide_img(obj){
 <a href='javascript:showCase(1)'>失败</a>
 <a href='javascript:showCase(2)'>所有</a>
 </p>
-
 <table id='result_table'>
 <colgroup>
 <col align='left' />
@@ -398,7 +367,7 @@ function hide_img(obj){
 </tr>
 
 <tr class='passClass'>
-    <td>test_clearing.TestClearing</td>
+    <td>test_shourang.TestShourang</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
@@ -408,14 +377,12 @@ function hide_img(obj){
 </tr>
 
 <tr id='pt1.1' class='hiddenRow'>
-    <td ><div class='testcase'>test001</div></td>
+    <td ><div class='testcase'>test002</div></td>
     <td colspan='5' align='center'>
-
     <!--css div popup start-->
     <span class='status passCase'>
     <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
         通过</a></span>
-
     <div id='div_pt1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
@@ -423,54 +390,29 @@ function hide_img(obj){
         </div>
         <pre>
         
-pt1.1: 2019-04-06 11:40:48,140	-	INFO	-	chrome成功启动
-2019-04-06 11:40:51,767	-	INFO	-	('id', 'account')输入17621032204成功
-2019-04-06 11:40:52,895	-	INFO	-	('id', 'verification')输入EJIE成功
-2019-04-06 11:40:54,014	-	INFO	-	('id', 'txtPhoneCertify')输入EJIE成功
-2019-04-06 11:40:54,131	-	INFO	-	('xpath', '//*[text()="登录"]')单击成功
-2019-04-06 11:40:54,138	-	INFO	-	登录成功，开始测试
-2019-04-06 11:40:54,837	-	INFO	-	('id', 'tTopMenucustomer')单击成功
-2019-04-06 11:40:54,973	-	INFO	-	('xpath', '//*[@id="tSideMenuloanList"]/span')单击成功
-2019-04-06 11:40:56,522	-	INFO	-	('xpath', '//input[@name="tInputFilter"]')输入2019040611404成功
-2019-04-06 11:40:56,698	-	INFO	-	('xpath', '//*[text()="筛选"]')单击成功
-2019-04-06 11:40:57,825	-	INFO	-	('xpath', '//*[@class="ivu-icon ivu-icon-edit"]')单击成功
-2019-04-06 11:40:58,941	-	INFO	-	('xpath', '//ul[@class="ivu-dropdown-menu"]/li[3]/a')单击成功
-2019-04-06 11:41:00,079	-	INFO	-	('xpath', '//*[@placeholder="清贷时间"]')单击成功
-2019-04-06 11:41:00,197	-	INFO	-	('xpath', '//*[@placeholder="清贷时间"]')单击成功
-2019-04-06 11:41:00,327	-	INFO	-	('xpath', '//*[@name="tBtnLoanListClearingConfirm"]')单击成功
-2019-04-06 11:41:03,339	-	INFO	-	向下滚动5距离的浏览器滚动条
-2019-04-06 11:41:03,471	-	INFO	-	('name', 'tBtnLoanListTrialModalConfirm')单击成功
-2019-04-06 11:41:05,611	-	INFO	-	('xpath', '//*[@id="tTopMenurepaymentRemoveLoan"]/span')单击成功
-2019-04-06 11:41:05,722	-	INFO	-	('id', 'tTopMenurepaymentRemoveLoan')单击成功
-2019-04-06 11:41:05,828	-	INFO	-	('id', 'tSideMenuremoveLoan')单击成功
-2019-04-06 11:41:05,947	-	INFO	-	('id', 'tSideMenuremoveLoanremoveLoan-list')单击成功
-2019-04-06 11:41:08,281	-	INFO	-	('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div[2]/div/div[1]/form/div[1]/div/div/input')输入2019040611404成功
-2019-04-06 11:41:08,372	-	INFO	-	('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div[2]/div/div[1]/form/div[1]/div/div/input')单击成功
-2019-04-06 11:41:10,533	-	INFO	-	('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div[2]/div/div[2]/div/div[2]/table/tbody/tr/td[13]/div/div/a[1]')单击成功
-2019-04-06 11:41:12,692	-	INFO	-	('xpath', '/html/body/div[7]/div[2]/div/div/div[2]/div/form/div[3]/div/div[1]/div[1]/div/span')单击成功
-2019-04-06 11:41:12,809	-	INFO	-	('xpath', '/html/body/div[7]/div[2]/div/div/div[2]/div/form/div[3]/div/div/div[2]/ul[2]/li[2]')单击成功
-2019-04-06 11:41:13,997	-	INFO	-	('xpath', '/html/body/div[7]/div[2]/div/div/div[2]/div/form/div[7]/div/div[1]/input')输入244143成功
-2019-04-06 11:41:14,109	-	INFO	-	('xpath', '/html/body/div[7]/div[2]/div/div/div[2]/div/form/div[7]/label')单击成功
-2019-04-06 11:41:16,256	-	INFO	-	('xpath', '/html/body/div[7]/div[2]/div/div/div[2]/div/form/div[8]/div/div/span')单击成功
-2019-04-06 11:41:17,397	-	INFO	-	('xpath', '/html/body/div[8]/div[2]/div/div/div[2]/div[1]/input')输入张巍巍成功
-2019-04-06 11:41:19,506	-	INFO	-	('xpath', '/html/body/div[8]/div[2]/div/div/div[2]/div[1]/input')单击成功
-2019-04-06 11:41:20,610	-	INFO	-	('xpath', '/html/body/div[8]/div[2]/div/div/div[2]/div[2]/div/div/div[2]/div')单击成功
-2019-04-06 11:41:21,671	-	INFO	-	鼠标移动到元素上('xpath', '//button[@name="tBtnRepaymentAddMemberConfirm"]')
-2019-04-06 11:41:21,778	-	INFO	-	('xpath', '//button[@name="tBtnRepaymentAddMemberConfirm"]')单击成功
-2019-04-06 11:41:22,877	-	INFO	-	('xpath', '//button[@name="tBtnRemoveLoanListModalConfirm"]')单击成功
-2019-04-06 11:41:23,998	-	INFO	-	('xpath', '//*[@id="tSideMenuremoveLoanremoveLoan-approval"]/span')单击成功
-2019-04-06 11:41:25,284	-	INFO	-	('xpath', '//input[@name="tInputFilter"]')输入2019040611404成功
-2019-04-06 11:41:25,359	-	INFO	-	('xpath', '//input[@name="tInputFilter"]')单击成功
-2019-04-06 11:41:27,551	-	INFO	-	('xpath', '// *[text() = "审批"]')单击成功
-2019-04-06 11:41:28,678	-	INFO	-	('xpath', '/html/body/div[7]/div[2]/div/div/div[2]/div[4]/form/div[1]/div/div/label[1]/span')单击成功
-2019-04-06 11:41:28,805	-	INFO	-	('xpath', '//*[@name="tBtnRemoveLoanApprovalModalConfirm"]')单击成功
-2019-04-06 11:41:29,945	-	INFO	-	('xpath', '//*[@id="tSideMenuremoveLoanReal"]/div/span')单击成功
+pt1.1: 2019-04-08 11:39:37,777	-	INFO	-	chrome成功启动
+2019-04-08 11:39:46,170	-	INFO	-	('id', 'account')输入17621032204成功
+2019-04-08 11:39:47,269	-	INFO	-	('id', 'verification')输入EJIE成功
+2019-04-08 11:39:48,405	-	INFO	-	('id', 'txtPhoneCertify')输入EJIE成功
+2019-04-08 11:39:48,490	-	INFO	-	('xpath', '//*[text()="登录"]')单击成功
+2019-04-08 11:39:48,490	-	INFO	-	登录成功，开始测试
+2019-04-08 11:39:49,271	-	INFO	-	('id', 'tTopMenucustomer')单击成功
+2019-04-08 11:39:49,328	-	INFO	-	('xpath', '//*[@id="tSideMenuloanList"]/span')单击成功
+2019-04-08 11:39:50,549	-	INFO	-	('xpath', '//input[@name="tInputFilter"]')输入2019040811393成功
+2019-04-08 11:39:50,641	-	INFO	-	('xpath', '//*[text()="筛选"]')单击成功
+2019-04-08 11:39:51,725	-	INFO	-	('xpath', '//*[@class="ivu-icon ivu-icon-edit"]')单击成功
+2019-04-08 11:39:52,822	-	INFO	-	('xpath', '//ul[@class="ivu-dropdown-menu"]/li[2]/a')单击成功
+2019-04-08 11:39:53,952	-	INFO	-	('xpath', '/html/body/div[8]/div[2]/div/div/div[2]/div/form/div[3]/div/div[1]/input')输入100000成功
+2019-04-08 11:39:56,127	-	INFO	-	('xpath', '//input[ @placeholder="年-月-日"]')单击成功
+2019-04-08 11:39:56,209	-	INFO	-	('xpath', '//input[ @placeholder="年-月-日"]')enter成功
+2019-04-08 11:39:56,259	-	INFO	-	('xpath', '//input[ @placeholder="年-月-日"]')tab单击成功
+2019-04-08 11:39:56,312	-	INFO	-	('xpath', '//input[ @placeholder="年-月-日"]')单击成功
+2019-04-08 11:39:56,363	-	INFO	-	('xpath', '//input[ @placeholder="年-月-日"]')enter成功
 
 
         </pre>
     </div>
     <!--css div popup end-->
-
     </td>
     <td>无截图</td>
 </tr>
@@ -491,6 +433,5 @@ pt1.1: 2019-04-06 11:40:48,140	-	INFO	-	chrome成功启动
 </script>
 
 <div id='ending'>&nbsp;</div>
-
 </body>
 </html>

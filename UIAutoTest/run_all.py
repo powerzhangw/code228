@@ -12,7 +12,8 @@ report_path = os.path.join(os.getcwd(), "reports")
 now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
 
 # html报告文件
-report_abspath = os.path.join(report_path, now+"result.html")
+# report_abspath = os.path.join(report_path, now+"result.html")
+report_abspath = os.path.join(report_path, "result.html")
 
 discover = unittest.defaultTestLoader.discover(case_path,
                                             pattern="test*.py",
