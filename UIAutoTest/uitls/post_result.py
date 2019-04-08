@@ -70,13 +70,13 @@ def times():
     # self.funderProductConfig = '213f18b0dca4486bbcced92e4c1f725a'
     # self.time = times()
 #
-postlendresult = get_datas(repayMethodText=u'等额本息',
-               customerName=randomname(),
-               deptID='33f1f497727b402c95607439f522ef68',
-               funder='0009800003',productId='0012600001',
-               amount=10,get_cod=get_fileNumber(),
-               funderProductConfig='213f18b0dca4486bbcced92e4c1f725a',
-               time =times())
+# postlendresult = get_datas(repayMethodText=u'等额本息',
+#                customerName=randomname(),
+#                deptID='33f1f497727b402c95607439f522ef68',
+#                funder='0009800003',productId='0012600001',
+#                amount=10,get_cod=get_fileNumber(),
+#                funderProductConfig='213f18b0dca4486bbcced92e4c1f725a',
+#                time =times())
 
 #跑批接口
 def batch_task(ID):

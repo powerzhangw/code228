@@ -15,7 +15,7 @@ class TestShourang(startend.PostlendTest):
         # 订单搜索
         self.browser.input((By.NAME, "tInputFilter"),'{0}'.format(self.po))
         self.browser.click((By.XPATH, '//*[text()=\"筛选\"]'))
-        self.browser.wait(1)
+        self.browser.wait(2)
         # 发起受让
         self.browser.click((By.XPATH, '//*[@class="ivu-icon ivu-icon-edit"]'))
         self.browser.wait(1)
@@ -39,15 +39,15 @@ class TestShourang(startend.PostlendTest):
         self.browser.click((By.ID,"tSideMenutransfertransfer-index"))
         # 订单搜索
         self.browser.input((By.NAME, "tInputFilter"), '{0}'.format(self.po))
+        self.browser.kenter(By.NAME,"tInputFilter")
         # 提交审批
+        time.sleep(1)
         self.browser.click((By.XPATH,'//*[text()="提交审批"]'))
         # 点击清贷框
         self.browser.click((By.XPATH,'//*[text()="请选择"]'))
         time.sleep(1)
         self.browser.click((By.XPATH,'//li[text()="查封"]'))
         self.browser.input((By.XPATH,'//textarea[@placeholder="请输入审批意见"]'),"审批意见")
-        # C:\Users\Administrator\Desktop\测试图\企鹅01
-        # self.browser.input((By.XPATH,'/html/body),'100000')
         self.browser.click((By.CSS_SELECTOR,'.ivu-icon.ivu-icon-camera'))
         os.system(r"F:\upfile.exe")
         self.browser.wait(1)

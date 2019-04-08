@@ -17,6 +17,13 @@ class PostlendTest(unittest.TestCase):
         def setUp(self):
             self.log = lib.logUntil.Log()
             self.po = post_result
+            self.po.get_datas(repayMethodText=u'等额本息',
+               customerName=randomname(),
+               deptID='33f1f497727b402c95607439f522ef68',
+               funder='0009800003',productId='0012600001',
+               amount=10,get_cod=get_fileNumber(),
+               funderProductConfig='213f18b0dca4486bbcced92e4c1f725a',
+               time =times())
             self.browser = browser()
             self.browser.get('http://postlend.demo.ejie365.cn/#/home')
             self.browser.max_window()

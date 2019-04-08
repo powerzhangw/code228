@@ -15,7 +15,7 @@
 #         # 订单搜索
 #         self.browser.input((By.XPATH, '//input[@name="tInputFilter"]'),'{0}'.format(self.po))
 #         self.browser.click((By.XPATH, '//*[text()=\"筛选\"]'))
-#         self.browser.wait(1)
+#         self.browser.wait(2)
 #         #发起清贷
 #         self.browser.click((By.XPATH,'//*[@class="ivu-icon ivu-icon-edit"]'))
 #         self.browser.wait(1)
@@ -65,7 +65,7 @@
 #         self.browser.click((By.NAME, "tBtnRepaymentAddMemberConfirm"))
 #         self.browser.wait(1)
 #         self.browser.click((By.XPATH, '//button[@name="tBtnRemoveLoanListModalConfirm"]'))
-#         self.browser.wait(1)
+#         self.browser.wait(2)
 #         # 点击经理审批
 #         self.browser.click((By.XPATH, '//*[@id="tSideMenuremoveLoanremoveLoan-approval"]/span'))
 #         self.browser.input((By.XPATH,'//input[@name="tInputFilter"]'),'{0}'.format(self.po))
