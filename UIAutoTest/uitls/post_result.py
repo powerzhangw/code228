@@ -32,7 +32,7 @@ def get_datas(repayMethodText,customerName,deptID,funder,productId,amount,get_co
         response = requests.post(url, headers=headers, data=data)
         code = response.json()['code']
         msg = response.json()['msg']
-        log.info(data)
+        # log.info(data)
         log.info(u'进件请求结果' + ':' + msg)
         return msg
     except Exception as e:

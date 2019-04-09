@@ -7,7 +7,7 @@ import configinfo as cf
 
 class Log(object):
     def __init__(self):
-        self.logFileName = os.path.join(cf.log_path, '{0}.log'.format(time.strftime('%Y%m%d%H')))
+        self.logFileName = os.path.join(cf.log_path, '{0}.log'.format(time.strftime('%Y%m%d')))
 
     def __logconsole(self, level, message):
         # 创建一个logger

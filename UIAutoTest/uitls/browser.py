@@ -193,6 +193,20 @@ class browser(object):
         except NoSuchElementException:
             log.error('无法获取元素' + locator)
             assert False, '无法获取元素' + str(locator)
+    def find_elements(self, locator):
+        """
+        查找元素对象
+        :param locator: 元素定位 (By.id,'id_name')
+        :Usage:
+        locator=(By.id,'id_name')
+        browser.find_element(locator)
+        """
+        try:
+            self.wait_elements(locator, 5)
+            return self.driver.find_elements(*locator)
+        except NoSuchElementException:
+            log.error('无法获取元素' + locator)
+            assert False, '无法获取元素' + str(locator)
 
     def input(self, located, value):
         """

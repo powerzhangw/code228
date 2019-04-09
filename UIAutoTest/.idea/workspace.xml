@@ -2,16 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ffdbbba-5933-474f-bf51-0c1c9df88ded" name="默认" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/test001.png" afterPath="$PROJECT_DIR$/reports/test001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uitls/close_title.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/log/2019040811.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/log/2019040812.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/log/2019040813.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/log/2019040815.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/log/2019040816.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/log/2019040817.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/log/2019040822.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/test002.png" afterPath="$PROJECT_DIR$/reports/test002.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/UIAutoTest.iml" afterPath="$PROJECT_DIR$/.idea/UIAutoTest.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/logUntil.py" afterPath="$PROJECT_DIR$/lib/logUntil.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/result.html" afterPath="$PROJECT_DIR$/reports/result.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_case/test_clearing.py" afterPath="$PROJECT_DIR$/test_case/test_clearing.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_case/test_shourang.py" afterPath="$PROJECT_DIR$/test_case/test_shourang.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uitls/browser.py" afterPath="$PROJECT_DIR$/uitls/browser.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uitls/post_result.py" afterPath="$PROJECT_DIR$/uitls/post_result.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uitls/startend.py" afterPath="$PROJECT_DIR$/uitls/startend.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,10 +28,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/UIAutoTest$_for_test_case_test_clearing_TestClearing_test001.coverage" NAME="不至于 for test_case.test_clearing.TestClearing.test001 Coverage Results" MODIFIED="1554523417082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/UIAutoTest$_in_test_shourang_py.coverage" NAME="不至于 in test_shourang.py Coverage Results" MODIFIED="1554691524064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/UIAutoTest$_for_uitls_startend_PostlendTest_tearDown.coverage" NAME="不至于 for uitls.startend.PostlendTest.tearDown Coverage Results" MODIFIED="1554212780142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/UIAutoTest$run_all.coverage" NAME="run_all Coverage Results" MODIFIED="1554691704389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/UIAutoTest$_for_uitls_startend_PostlendTest_tearDown.coverage" NAME="不至于 for uitls.startend.PostlendTest.tearDown Coverage Results" MODIFIED="1554212780142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/UIAutoTest$_for_test_case_test_shourang_TestShourang_test002.coverage" NAME="不至于 for test_case.test_shourang.TestShourang.test002 Coverage Results" MODIFIED="1554799970579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/UIAutoTest$_for_test_case_test_clearing_TestClearing_test001.coverage" NAME="不至于 for test_case.test_clearing.TestClearing.test001 Coverage Results" MODIFIED="1554523417082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/UIAutoTest$_in_test_shourang_py.coverage" NAME="不至于 in test_shourang.py Coverage Results" MODIFIED="1554794993814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="GROUP_SCHEMA" value="true" />
@@ -43,8 +51,8 @@
       <file leaf-file-name="startend.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uitls/startend.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state relative-caret-position="825">
+              <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
               <folding>
                 <element signature="e#89#104#0" expanded="true" />
               </folding>
@@ -52,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_clearing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_case/test_clearing.py">
+      <file leaf-file-name="close_title.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/uitls/close_title.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1107">
-              <caret line="71" column="34" lean-forward="true" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
+            <state relative-caret-position="48">
+              <caret line="2" column="43" lean-forward="true" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -65,46 +73,41 @@
       <file leaf-file-name="post_result.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uitls/post_result.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="2" selection-end-line="78" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="211">
+              <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+              <folding>
+                <element signature="e#24#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_renling.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_case/test_renling.py">
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/uitls/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2619">
-              <caret line="23" column="62" lean-forward="true" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+            <state relative-caret-position="168">
+              <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test001.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reports/test001.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_rl.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reports/test_rl.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_shourang.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_shourang.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_case/test_shourang.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+            <state relative-caret-position="216">
+              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
               <folding>
                 <element signature="e#23#49#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test002.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reports/test002.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -113,29 +116,32 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#1757#53356#2" expanded="true" />
+                <element signature="e#61600#61606#1" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#td#1;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#63608#63612#0" expanded="true" />
+                <element signature="e#63721#63725#0" expanded="true" />
+                <element signature="e#66229#66233#0" expanded="true" />
+                <element signature="e#66251#66255#0" expanded="true" />
+                <element signature="e#66770#66774#0" expanded="true" />
+                <element signature="e#66792#66796#0" expanded="true" />
+                <element signature="e#67311#67315#0" expanded="true" />
+                <element signature="e#67333#67337#0" expanded="true" />
+                <element signature="e#68707#68713#1" expanded="true" />
+                <element signature="e#68727#68733#1" expanded="true" />
+                <element signature="e#68833#68839#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_all.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_all.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="browser.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="browser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uitls/browser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="251" column="24" lean-forward="true" selection-start-line="251" selection-start-column="24" selection-end-line="251" selection-end-column="24" />
-              <folding>
-                <element signature="e#18#48#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="249">
+              <caret line="321" column="57" lean-forward="false" selection-start-line="321" selection-start-column="57" selection-end-line="321" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -165,6 +171,7 @@
       <find>/html/body/div[3]/ul/li[1]</find>
       <find>po</find>
       <find>2019040415040</find>
+      <find>审批</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,8 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/configinfo.py" />
-        <option value="$PROJECT_DIR$/uitls/post_email.py" />
         <option value="$PROJECT_DIR$/uitls/delete_report.py" />
         <option value="$PROJECT_DIR$/re_re/run_all.py" />
         <option value="$PROJECT_DIR$/test_case/test_login.py" />
@@ -198,7 +203,6 @@
         <option value="$PROJECT_DIR$/demo/postlend_demo.py" />
         <option value="$PROJECT_DIR$/uitls/get_data.py" />
         <option value="$PROJECT_DIR$/test_case/test_01.py" />
-        <option value="$PROJECT_DIR$/lib/logUntil.py" />
         <option value="$PROJECT_DIR$/re_re/hello.py" />
         <option value="$PROJECT_DIR$/demo/diaoyong_jinjian.py" />
         <option value="$PROJECT_DIR$/demo/jin_jian.py" />
@@ -215,15 +219,18 @@
         <option value="$PROJECT_DIR$/re_re/g_codes.py" />
         <option value="$PROJECT_DIR$/test_case/test_renling.py" />
         <option value="$PROJECT_DIR$/reports/2019-04-08-11_00_09result.html" />
-        <option value="$PROJECT_DIR$/uitls/browser.py" />
         <option value="$PROJECT_DIR$/run_all.py" />
         <option value="$PROJECT_DIR$/reports/log/2019040812.log" />
         <option value="$PROJECT_DIR$/demo/test/upload.py" />
+        <option value="$PROJECT_DIR$/test_case/test_clearing.py" />
+        <option value="$PROJECT_DIR$/lib/logUntil.py" />
+        <option value="$PROJECT_DIR$/reports/log/20190409.log" />
+        <option value="$PROJECT_DIR$/uitls/post_result.py" />
+        <option value="$PROJECT_DIR$/uitls/close_title.py" />
         <option value="$PROJECT_DIR$/reports/result.html" />
         <option value="$PROJECT_DIR$/uitls/startend.py" />
-        <option value="$PROJECT_DIR$/uitls/post_result.py" />
+        <option value="$PROJECT_DIR$/uitls/browser.py" />
         <option value="$PROJECT_DIR$/test_case/test_shourang.py" />
-        <option value="$PROJECT_DIR$/test_case/test_clearing.py" />
       </list>
     </option>
   </component>
@@ -234,10 +241,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -255,6 +262,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -264,20 +273,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="UIAutoTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UIAutoTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UIAutoTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uitls" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,67 +304,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UIAutoTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UIAutoTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reports" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UIAutoTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UIAutoTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UIAutoTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UIAutoTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -399,7 +342,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run_all">
+  <component name="RunManager" selected="Python 测试.不至于 for test_case.test_shourang.TestShourang.test002">
     <configuration default="false" name="run_all" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -414,25 +357,6 @@
       <module name="UIAutoTest" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_all.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="bbb" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/demo" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="UIAutoTest" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo/bbb.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -490,6 +414,22 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test_case/test_shourang.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="不至于 for test_case.test_shourang.TestShourang.test002" type="tests" factoryName="不至于" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="UIAutoTest" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_case.test_shourang.TestShourang.test002&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -642,18 +582,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.run_all" />
-      <item index="1" class="java.lang.String" itemvalue="Python.bbb" />
-      <item index="2" class="java.lang.String" itemvalue="Python.g_codes" />
-      <item index="3" class="java.lang.String" itemvalue="Python.post_result" />
-      <item index="4" class="java.lang.String" itemvalue="Python 测试.不至于 in test_shourang.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python.g_codes" />
+      <item index="2" class="java.lang.String" itemvalue="Python.post_result" />
+      <item index="3" class="java.lang.String" itemvalue="Python 测试.不至于 in test_shourang.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python 测试.不至于 for test_case.test_shourang.TestShourang.test002" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.run_all" />
+        <item index="0" class="java.lang.String" itemvalue="Python 测试.不至于 for test_case.test_shourang.TestShourang.test002" />
         <item index="1" class="java.lang.String" itemvalue="Python 测试.不至于 in test_shourang.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python.post_result" />
-        <item index="3" class="java.lang.String" itemvalue="Python.g_codes" />
-        <item index="4" class="java.lang.String" itemvalue="Python.bbb" />
+        <item index="2" class="java.lang.String" itemvalue="Python.run_all" />
+        <item index="3" class="java.lang.String" itemvalue="Python.post_result" />
+        <item index="4" class="java.lang.String" itemvalue="Python.g_codes" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -725,15 +665,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="不至于_for_test_case_test_clearing_TestClearing_test001 - 2019.04.06 at 11h 49m 03s.xml">
-      <configuration name="不至于 for test_case.test_clearing.TestClearing.test001" configurationId="tests" />
-    </history-entry>
-    <history-entry file="不至于_for_test_case_test_clearing_TestClearing_test001 - 2019.04.06 at 11h 50m 22s.xml">
-      <configuration name="不至于 for test_case.test_clearing.TestClearing.test001" configurationId="tests" />
-    </history-entry>
-    <history-entry file="不至于_for_test_case_test_clearing_TestClearing_test001 - 2019.04.06 at 11h 54m 30s.xml">
-      <configuration name="不至于 for test_case.test_clearing.TestClearing.test001" configurationId="tests" />
-    </history-entry>
     <history-entry file="不至于_for_test_case_test_clearing_TestClearing_test001 - 2019.04.06 at 12h 01m 49s.xml">
       <configuration name="不至于 for test_case.test_clearing.TestClearing.test001" configurationId="tests" />
     </history-entry>
@@ -742,6 +673,9 @@
     </history-entry>
     <history-entry file="不至于_for_test_case_test_clearing_TestClearing_test001 - 2019.04.06 at 12h 04m 27s.xml">
       <configuration name="不至于 for test_case.test_clearing.TestClearing.test001" configurationId="tests" />
+    </history-entry>
+    <history-entry file="不至于_for_test_case_test_shourang_TestShourang_test002 - 2019.04.09 at 16h 54m 14s.xml">
+      <configuration name="不至于 for test_case.test_shourang.TestShourang.test002" configurationId="tests" />
     </history-entry>
     <history-entry file="不至于_in_test_shourang_py - 2019.04.08 at 10h 39m 22s.xml">
       <configuration name="不至于 in test_shourang.py" configurationId="tests" />
@@ -753,6 +687,12 @@
       <configuration name="不至于 in test_shourang.py" configurationId="tests" />
     </history-entry>
     <history-entry file="不至于_in_test_shourang_py - 2019.04.08 at 10h 45m 46s.xml">
+      <configuration name="不至于 in test_shourang.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="不至于_in_test_shourang_py - 2019.04.09 at 15h 28m 33s.xml">
+      <configuration name="不至于 in test_shourang.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="不至于_in_test_shourang_py - 2019.04.09 at 15h 31m 20s.xml">
       <configuration name="不至于 in test_shourang.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -769,17 +709,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17274678" sideWeight="0.49358973" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17750533" sideWeight="0.49358973" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29252437" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1722103" sideWeight="0.50641024" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -803,13 +744,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints-defaults>
-        <breakpoint type="python-line" />
-      </breakpoints-defaults>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="26" />
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -817,48 +755,6 @@
     <SUITE FILE_PATH="coverage/UIAutoTest$g_codes__1_.coverage" NAME="g_codes (1) Coverage Results" MODIFIED="1553765514571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/re_re" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Python37/Lib/site-packages/selenium/webdriver/common/actions/pointer_actions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python37/Lib/site-packages/selenium/webdriver/support/event_firing_webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="227" column="22" lean-forward="false" selection-start-line="227" selection-start-column="16" selection-end-line="227" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/browser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="210" column="22" lean-forward="false" selection-start-line="210" selection-start-column="16" selection-end-line="210" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/startend.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="23" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uitls/delete_report.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uitls/post_email.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo/bbb.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -877,13 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uitls/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -909,13 +798,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reports/log/2019040415.log" />
-    <entry file="file://$PROJECT_DIR$/uitls/get_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run.py" />
     <entry file="file://$PROJECT_DIR$/reports/log/2019040523.log" />
     <entry file="file://$PROJECT_DIR$/uitls/unit_star_end.py">
@@ -955,18 +837,11 @@
     <entry file="file://$PROJECT_DIR$/reports/2019-04-06-14_05_26result.html" />
     <entry file="file://$PROJECT_DIR$/reports/2019-04-06-14_16_36result.html" />
     <entry file="file://$PROJECT_DIR$/reports/2019-04-08-10_52_48result.html" />
-    <entry file="file://$PROJECT_DIR$/reports/log/2019040811.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="14" column="97" lean-forward="true" selection-start-line="14" selection-start-column="97" selection-end-line="14" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python37/Lib/site-packages/selenium/webdriver/remote/webelement.py">
+    <entry file="file://$PROJECT_DIR$/reports/log/2019040811.log" />
+    <entry file="file://D:/python37/Lib/site-packages/selenium/webdriver/remote/webelement.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1045">
           <caret line="485" column="52" lean-forward="false" selection-start-line="485" selection-start-column="44" selection-end-line="485" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -979,28 +854,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reports/log/2019040812.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2945">
-          <caret line="21" column="564" lean-forward="false" selection-start-line="21" selection-start-column="564" selection-end-line="21" selection-end-column="564" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/reports/log/2019040812.log" />
     <entry file="file://$PROJECT_DIR$/run_all.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="378">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reports/test002.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reports/test_rl.png">
@@ -1012,27 +874,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-124">
           <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-          <folding>
-            <element signature="e#24#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uitls/startend.py">
+    <entry file="file://$PROJECT_DIR$/test_case/test_clearing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding>
-            <element signature="e#89#104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uitls/post_result.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="2" selection-end-line="78" selection-end-column="31" />
+        <state relative-caret-position="1704">
+          <caret line="71" column="34" lean-forward="false" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/logUntil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="e#15#29#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uitls/log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uitls/get_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-288">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#27#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1041,15 +918,15 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/test_renling.py">
+    <entry file="file://D:/python37/Lib/site-packages/selenium/webdriver/common/by.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2619">
-          <caret line="23" column="62" lean-forward="true" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+        <state relative-caret-position="198">
+          <caret line="22" column="6" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reports/result.html">
+    <entry file="file://$PROJECT_DIR$/uitls/post_email.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1057,30 +934,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/test_clearing.py">
+    <entry file="file://$PROJECT_DIR$/test_case/test_renling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="71" column="34" lean-forward="true" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
+        <state relative-caret-position="369">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/test_shourang.py">
+    <entry file="file://$PROJECT_DIR$/uitls/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        <state relative-caret-position="168">
+          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uitls/close_title.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="43" lean-forward="true" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reports/log/20190409.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="3821" column="43" lean-forward="true" selection-start-line="3821" selection-start-column="43" selection-end-line="3821" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uitls/post_result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
           <folding>
-            <element signature="e#23#49#0" expanded="true" />
+            <element signature="e#24#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/uitls/browser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="251" column="24" lean-forward="true" selection-start-line="251" selection-start-column="24" selection-end-line="251" selection-end-column="24" />
+        <state relative-caret-position="249">
+          <caret line="321" column="57" lean-forward="false" selection-start-line="321" selection-start-column="57" selection-end-line="321" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uitls/startend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
           <folding>
-            <element signature="e#18#48#0" expanded="true" />
+            <element signature="e#89#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reports/test002.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reports/result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1757#53356#2" expanded="true" />
+            <element signature="e#61600#61606#1" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#td#1;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#63608#63612#0" expanded="true" />
+            <element signature="e#63721#63725#0" expanded="true" />
+            <element signature="e#66229#66233#0" expanded="true" />
+            <element signature="e#66251#66255#0" expanded="true" />
+            <element signature="e#66770#66774#0" expanded="true" />
+            <element signature="e#66792#66796#0" expanded="true" />
+            <element signature="e#67311#67315#0" expanded="true" />
+            <element signature="e#67333#67337#0" expanded="true" />
+            <element signature="e#68707#68713#1" expanded="true" />
+            <element signature="e#68727#68733#1" expanded="true" />
+            <element signature="e#68833#68839#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/test_shourang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#23#49#0" expanded="true" />
           </folding>
         </state>
       </provider>

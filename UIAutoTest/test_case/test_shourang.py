@@ -3,6 +3,7 @@ from uitls import startend
 from selenium.webdriver.common.by import By
 from uitls.post_result import *
 import os
+import uitls.close_title
 
 
 class TestShourang(startend.PostlendTest):
@@ -30,6 +31,7 @@ class TestShourang(startend.PostlendTest):
         self.browser.click((By.CSS_SELECTOR,'button[name="tBtnLoanListTransferModalConfirm"]>span'))
         self.browser.click((By.CSS_SELECTOR,'button[name="tBtnLoanListTransferModalConfirm"]>span'))
         self.browser.wait(1)
+        log.info('发起受让成功')
         # 还款管理
         self.browser.wait(1)
         self.browser.click((By.ID,"tTopMenurepayment"))
@@ -39,7 +41,7 @@ class TestShourang(startend.PostlendTest):
         self.browser.click((By.ID,"tSideMenutransfertransfer-index"))
         # 订单搜索
         self.browser.input((By.NAME, "tInputFilter"), '{0}'.format(self.po))
-        self.browser.kenter(By.NAME,"tInputFilter")
+        self.browser.kenter((By.NAME,"tInputFilter"))
         # 提交审批
         time.sleep(1)
         self.browser.click((By.XPATH,'//*[text()="提交审批"]'))
@@ -90,12 +92,72 @@ class TestShourang(startend.PostlendTest):
         self.browser.click((By.ID, "tSideMenutransfertransfer-approval"))
         # 订单搜索
         self.browser.input((By.NAME, "tInputFilter"), '{0}'.format(self.po))
-        self.browser.click((By.XPATH, '//a[text()="审批"]'))
+        self.browser.click((By.CSS_SELECTOR, ' tr:nth-child(1) > td:nth-child(14) > div'))
         self.browser.wait(2)
         # self.browser.click((By.CSS_SELECTOR, '.ivu-radio.ivu-radio-checked>span'))
         # self.browser.click((By.CSS_SELECTOR, ".ivu-radio.ivu-radio-checked"))
         self.browser.click((By.XPATH, "/html/body/div[7]/div[2]/div/div/div[2]/div[4]/form/div[1]/div/div/label[1]/span"))
         self.browser.click((By.NAME, 'tBtnTransferApprovalModalConfirm'))
+        # 副总审批列表
+        self.browser.wait(1)
+        self.browser.click((By.ID, "tSideMenutransfertransfer-approval1"))
+        # 订单搜索
+        self.browser.input((By.NAME, "tInputFilter"), '{0}'.format(self.po))
+        self.browser.kenter((By.NAME, "tInputFilter"))
+        time.sleep(1)
+        self.browser.click((By.CSS_SELECTOR, ' tr:nth-child(1) > td:nth-child(14) > div'))
+        self.browser.wait(2)
+        self.browser.click((By.XPATH, "/html/body/div[7]/div[2]/div/div/div[2]/div[5]/form/div[1]/div/div/label[1]/span"))
+        self.browser.click((By.NAME, 'tBtnTransferApprovalModalConfirm'))
+        # 总经理审批列表
+        self.browser.wait(1)
+        self.browser.click((By.ID, "tSideMenutransfertransfer-approval2"))
+        # 订单搜索
+        self.browser.input((By.NAME, "tInputFilter"), '{0}'.format(self.po))
+        self.browser.kenter((By.NAME, "tInputFilter"))
+        time.sleep(1)
+        self.browser.click((By.CSS_SELECTOR, ' tr:nth-child(1) > td:nth-child(14) > div'))
+        self.browser.wait(3)
+        self.browser.click((By.XPATH, "/html/body/div[7]/div[2]/div/div/div[2]/div[5]/form/div[1]/div/div/label[1]/span"))
+        self.browser.click((By.NAME, 'tBtnTransferApprovalModalConfirm'))
+        # 受让确认列表
+        self.browser.wait(1)
+        self.browser.click((By.ID, "tSideMenutransfertransfer-ensure"))
+        # 订单搜索
+        self.browser.input((By.NAME, "tInputFilter"), '{0}'.format(self.po))
+        self.browser.kenter((By.NAME, "tInputFilter"))
+        time.sleep(1)
+        self.browser.click((By.XPATH, '//a[text()="确认"]'))
+        self.browser.wait(1)
+        self.browser.click((By.NAME, 'tBtnTransferEnsureModalConfirm'))
+        #历史受让列表
+        self.browser.wait(1)
+        self.browser.click((By.ID,'tSideMenutransfertransfer-history'))
+        self.browser.input((By.NAME, "tInputFilter"), '{0}'.format(self.po))
+        self.browser.kenter((By.NAME, "tInputFilter"))
+        self.browser.wait(1)
+        self.browser.click((By.XPATH, "//*[text()= '{0}']".format(self.po)))
+        self.browser.wait(2)
+        self.srstatus = self.browser.get_text((By.CSS_SELECTOR,'div.ivu-collapse-header > span'))
+        log.info(self.srstatus)
+        self.srstatusss = "完成受让"
+        self.assertEqual(self.srstatus, self.srstatus)
+        self.browser.wait(1)
+        # 点击资方还款计划表
+        self.browser.click((By.XPATH,'//*[@id="app"]/div/div/div[2]/div[2]/div[2]/div/div[3]/div/div[1]/div/div/div/div/div[3]'))
+        self.browser.click((By.XPATH,'//div[text()="资方表"]'))
+        self.a = self.browser.get_text((By.XPATH,'//span[text()="已回购"]'))
+        log.info(self.a)
+        self.b = "已回购"
+        self.assertEqual(self.a, self.b)
+
+
+
+
+
+
+
+
 
 
 
